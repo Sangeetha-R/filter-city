@@ -14,13 +14,13 @@ function App() {
   const [state, setStateVal] = useState('');
   const [city, setCity] = useState('');
   useEffect(() => {
-    axios.get('https://raw.githubusercontent.com/dr5hn/countries-states-cities-database/master/countries.json').then((resp) => {
+    axios.get('https://raw.githubusercontent.com/Sangeetha-R/sangeetha-r.github.io/main/data/countries.json').then((resp) => {
       setCountries(resp.data);
     });
-    axios.get('https://raw.githubusercontent.com/dr5hn/countries-states-cities-database/master/states.json').then((resp) => {
+    axios.get('https://raw.githubusercontent.com/Sangeetha-R/sangeetha-r.github.io/main/data/states.json').then((resp) => {
       setStates(resp.data);
     });
-    axios.get('https://raw.githubusercontent.com/dr5hn/countries-states-cities-database/master/cities.json').then((resp) => {
+    axios.get('https://raw.githubusercontent.com/Sangeetha-R/sangeetha-r.github.io/main/data/cities.json').then((resp) => {
       setCities(resp.data);
     });
   }, []);
